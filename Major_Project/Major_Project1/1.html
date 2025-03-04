@@ -1,0 +1,193 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+</head>
+<body>
+
+    <div>
+        <h1>Book Library</h1>
+    </div>
+
+    <!-- Alphabet Navigation
+    <div>
+        <h2>Browse by Alphabet</h2>
+        <div>
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#R">R</a>
+            <a href="#S">S</a>
+            <a href="#T">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#X">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </div>
+    </div>
+
+    <!-- Book List Section 
+    <div id="A">
+        <h2>Adventure Books (A)</h2>
+        <div>
+            <h3>Treasure Island</h3>
+            <p><strong>Author:</strong> Robert Louis Stevenson</p>
+            <p>Description: A classic adventure novel about pirates and treasure hunts.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div>
+            <h3>The Three Musketeers</h3>
+            <p><strong>Author:</strong> Alexandre Dumas</p>
+            <p>Description: A historical adventure novel about bravery and friendship.</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="B">
+        <h2>Books Starting with B</h2>
+        <div>
+            <h3>Black Beauty</h3>
+            <p><strong>Author:</strong> Anna Sewell</p>
+            <p>Description: A touching story about a horse’s journey through life.</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div id="C">
+        <h2>Books Starting with C</h2>
+        <p>No books available yet.</p>
+    </div>
+
+    <!-- Repeat for other letters (D-Z) as needed 
+
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Book container */
+        .book-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        /* Individual book card */
+        .book-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .book-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .book-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Add to Cart Button */
+        .add-to-cart {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .add-to-cart:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Book Library</h1>
+
+    <div class="book-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <h3>Treasure Island</h3>
+            <p><strong>Author:</strong> Robert Louis Stevenson</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <h3>The Three Musketeers</h3>
+            <p><strong>Author:</strong> Alexandre Dumas</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <h3>Black Beauty</h3>
+            <p><strong>Author:</strong> Anna Sewell</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <h3>Pride and Prejudice</h3>
+            <p><strong>Author:</strong> Jane Austen</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card">
+            <h3>Moby-Dick</h3>
+            <p><strong>Author:</strong> Herman Melville</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
